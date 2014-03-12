@@ -57,6 +57,9 @@
     <ClCompile Include="World.cpp">
       <Filter>Source Files\GTG\World</Filter>
     </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Source Files\GTG</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D3DApp.h">
@@ -88,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="World.h">
       <Filter>Header Files\GTG\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Header Files\GTG</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

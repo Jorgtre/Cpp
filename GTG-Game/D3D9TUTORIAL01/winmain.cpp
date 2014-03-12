@@ -15,6 +15,8 @@ const DWORD d3dVertex::VertexPositionColor::FVF = D3DFVF_XYZ | D3DFVF_DIFFUSE;
 const DWORD d3dVertex::VertexPositionTexture::FVF = D3DFVF_XYZ | D3DFVF_TEX1;
 const DWORD d3dVertex::VertexPosTex3D::FVF = D3DFVF_XYZ | D3DFVF_TEX1;
 
+mouse Mouse;
+mouse& pMouse = Mouse;
 
 
 
@@ -76,9 +78,11 @@ void TestApp::Update(float dt)
 	
 
 	world.Update(dt);
-	
+	Mouse.update();
 
-	cam.Update(m_pDevice3D, m_uiClientWidth, m_uiClientHeight, dt);
+	if (keyClicked(VK_L)) { Mouse.toggleGrabb(); }
+
+	cam.Update(m_pDevice3D, m_uiClientWidth, m_uiClientHeight, dt, pMouse);
 	
 	
 	

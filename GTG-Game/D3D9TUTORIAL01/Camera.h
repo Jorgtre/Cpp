@@ -5,6 +5,7 @@
 #include <d3dx9.h>
 #include "Output.h"
 #include "Input.h"
+#include "Mouse.h"
 
 
 
@@ -17,14 +18,15 @@ public:
 
 
 
-	void Update(IDirect3DDevice9* device, int winWidth, int winHeight, float dt);
+	void Update(IDirect3DDevice9* device, int winWidth, int winHeight, float dt, mouse& Mouse);
 	D3DXVECTOR3 Position();
 	D3DXVECTOR3 LookingAt();
 	D3DXVECTOR3 vUp();
 	void Position(float x, float y, float z);
 	void LookAt(float x, float y, float z);
 	void vUp(float x, float y, float z);
-	mouse Mouse;
+	mouse ref_Mouse;
+	
 
 
 

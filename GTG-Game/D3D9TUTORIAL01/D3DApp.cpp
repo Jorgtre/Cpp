@@ -26,7 +26,7 @@ D3DApp::D3DApp(HINSTANCE hInstance)
 	m_hAppWindow = NULL;
 	m_uiClientWidth = 1900;
 	m_uiClientHeight = 1000;
-	m_sAppTitle = "DIRECTX9 APPLICATION";
+	m_sAppTitle = "GTG Game";
 	m_WindowStyle = WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MAXIMIZEBOX | WS_MINIMIZEBOX;
 	m_bDeviceLost = false;
 	m_bHandleDeviceLost = false;

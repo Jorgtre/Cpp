@@ -14,11 +14,9 @@ Camera::~Camera()
 {
 
 }
-void Camera::Update(IDirect3DDevice9* m_pDevice3D, int winWidth, int winHeight, float dt)
+void Camera::Update(IDirect3DDevice9* m_pDevice3D, int winWidth, int winHeight, float dt, mouse& Mouse)
 {
-	Mouse.update();
-
-	if (keyClicked(VK_L)) { Mouse.toggleGrabb(); }
+	ref_Mouse = Mouse;
 	
 	
 	
@@ -61,10 +59,10 @@ void Camera::Rotate()
 
 	//create rotation matrices
 
-	D3DXMatrixRotationAxis(&matRotAxis, &vRotAxis, Mouse.getDY() / -800);
+	D3DXMatrixRotationAxis(&matRotAxis, &vRotAxis, ref_Mouse.getDY() / -800);
 
 
-	D3DXMatrixRotationY(&matRotY, Mouse.getDX() / 800);
+	D3DXMatrixRotationY(&matRotY, ref_Mouse.getDX() / 800);
 
 	//D3DXMatrixRotationYawPitchRoll(&matRotZ, Mouse.getDX() / 800,  Mouse.getDY() / 800, Z);
 

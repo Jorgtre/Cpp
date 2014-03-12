@@ -75,6 +75,7 @@
     <ClCompile Include="D3DApp.cpp" />
     <ClCompile Include="GTexCube.cpp" />
     <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="Output.cpp" />
     <ClCompile Include="Block.cpp" />
     <ClCompile Include="Test.cpp" />
@@ -88,6 +89,7 @@
     <ClInclude Include="d3dUtil.h" />
     <ClInclude Include="GTexCube.h" />
     <ClInclude Include="Input.h" />
+    <ClInclude Include="Mouse.h" />
     <ClInclude Include="Output.h" />
     <ClInclude Include="Block.h" />
     <ClInclude Include="Test.h" />

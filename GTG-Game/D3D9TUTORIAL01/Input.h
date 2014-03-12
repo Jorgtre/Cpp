@@ -42,7 +42,7 @@ bool keyClicked(SHORT Key);
 
 
 
-
+/*
 #ifndef INPUT_H
 #define INPUT_H
 class mouse
@@ -71,4 +71,5 @@ private:
 
 };
 #endif
+*/
 
